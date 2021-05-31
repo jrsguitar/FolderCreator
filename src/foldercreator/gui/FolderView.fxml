@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foldercreator.gui.FolderViewController">
+   <children>
+      <TextField fx:id="local" disable="true" layoutX="25.0" layoutY="59.0" prefHeight="26.0" prefWidth="214.0" promptText="Didite o caminho da pasta" text="C:\FolderCreator\" />
+      <Label layoutX="25.0" layoutY="34.0" text="Digite o local de criação das pastas " />
+      <RadioButton fx:id="adicionaisBtn" layoutX="23.0" layoutY="146.0" mnemonicParsing="false" text="Criar documentos adicionais " />
+      <TextArea fx:id="textArea" layoutX="248.0" layoutY="12.0" prefHeight="377.0" prefWidth="333.0" promptText="Copie e cole uma lista de nomes de pastas  aqui!" />
+      <Button fx:id="limparBtn" layoutX="23.0" layoutY="351.0" mnemonicParsing="false" onAction="#onBtLimpar" text="Limpar" />
+      <Button fx:id="criarBtn" layoutX="94.0" layoutY="351.0" mnemonicParsing="false" onAction="#onBtCriar" text="Criar" />
+      <Button fx:id="abrirBtn" layoutX="165.0" layoutY="351.0" mnemonicParsing="false" onAction="#onBrAbrir" text="Abrir " />
+      <Label layoutX="29.0" layoutY="205.0" text="Mês" />
+      <Label layoutX="31.0" layoutY="251.0" text="Ano" />
+      <TextField fx:id="mes" layoutX="66.0" layoutY="201.0" prefHeight="26.0" prefWidth="106.0" promptText="Digite o mês" />
+      <TextField fx:id="ano" layoutX="66.0" layoutY="247.0" prefHeight="26.0" prefWidth="106.0" promptText="Digite o ano" />
+      <Button fx:id="pastaDefault" layoutX="23.0" layoutY="92.0" mnemonicParsing="false" onAction="#alterarURL" text="Alterar pasta padrão?" />
+      <Button fx:id="corrigir" layoutX="23.0" layoutY="295.0" mnemonicParsing="false" onAction="#onBtCorrigir" text="Padronizar lista" />
+   </children>
+</AnchorPane>
