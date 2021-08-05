@@ -8,7 +8,10 @@ package foldercreator.gui;
 import foldercreator.model.service.Standardize;
 import foldercreator.model.entities.AlertJeff;
 import foldercreator.model.service.CreateFolder;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.Set;
@@ -62,12 +65,12 @@ public class FolderViewController implements Initializable {
         lista.forEach((x) -> {
             textArea.setText(textArea.getText() + "\n" + x);
         });
-
     }
 
     public void onBtCriar() {
         CreateFolder create = new CreateFolder();
         create.create(local, adicionaisBtn, textArea, ano, mes);
+        
     }
 
     public void onBrAbrir() {
